@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum of a function - genetic algortihm</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left__side">
+            <h1>Maximum of a function</h1>
+            <div class="form-wrapper">
+                <div class="form-inner-wrapper">
+                    <div class="input-wrapper">
+                        <label for="population" class="labels">Dimension of the population:</label><br>
+                        <input name="population" class="inputs" type="number" min="1">
+                    </div>
+            
+                    <div class="input_wrapper__multiple input_wrapper__multiple_2">
+                        <div class="input-wrapper">
+                            <label for="population" class="labels">Left closure:</label><br>
+                            <input name="left_closure" class="inputs" type="number">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="population" class="labels">Right closure:</label><br>
+                            <input name="right_closure" class="inputs" type="number">
+                        </div>
+                    </div>
+            
+                    <div class="input_wrapper__multiple input_wrapper__multiple_3">
+                        <div class="input-wrapper">
+                            <label for="population" class="labels">a:</label><br>
+                            <input name="a" class="inputs" type="number">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="population" class="labels">b:</label><br>
+                            <input name="b" class="inputs" type="number">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="population" class="labels">c:</label><br>
+                            <input name="c" class="inputs" type="number">
+                        </div>
+                    </div>
+            
+                    <div class="input-wrapper">
+                        <label for="population" class="labels">Precision:</label><br>
+                        <input name="precision" class="inputs" type="number" min="1">
+                    </div>
+            
+                    <div class="input-wrapper">
+                        <label for="population" class="labels">Probability of recombination:</label><br>
+                        <input name="prob_recombination" class="inputs" type="number" min="1" max="100">
+                    </div>
+            
+                    <div class="input-wrapper">
+                        <label for="population" class="labels">Probability of mutation:</label><br>
+                        <input name="prob_mutation" class="inputs" type="number" min="1" max="100">
+                    </div>
+            
+                    <div class="input-wrapper">
+                        <label for="population" class="labels">Number of steps:</label><br>
+                        <input name="num_of_steps" class="inputs" type="number" min="1">
+                    </div>
+        
+                    <div class="btn-start" id="find_max">
+                        START
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right__side">
+            <div>
+                <canvas id="max_value"></canvas>
+            </div>
+            <div>
+                <canvas id="mean_value"></canvas> 
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

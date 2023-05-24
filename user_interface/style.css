@@ -1,0 +1,86 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+body{
+    background-color:hsla(0,100%,50%,1);
+    background-image:
+        radial-gradient(at 48% 41%, hsla(28,100%,74%,1) 0px, transparent 50%),
+        radial-gradient(at 85% 14%, hsla(189,100%,56%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 77%, hsla(340,100%,76%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    background: rgba( 255, 255, 255, 0.6 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    height: 75%;
+    width: 90%;
+    padding: 3vw;
+
+    display: flex;
+}
+
+/* LEFT SIDE */
+/* ******** */
+.left__side{ flex: 1;}
+.left__side h1{ margin-bottom: 15px;}
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.input_wrapper__multiple{ 
+    display: grid; 
+    grid-gap: 10px;
+}
+
+.input_wrapper__multiple_2{ grid-template-columns: repeat(2, auto);}
+.input_wrapper__multiple_3{ grid-template-columns: repeat(3, auto); }
+
+.labels{ font-weight: 600; }
+.inputs{ 
+    width: 100%;
+    border: none; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+    margin-right: 10px; 
+    padding: 5px 2.5px;}
+
+.btn-start{
+    background: rgb(207, 49, 32);
+    color: white;
+    width: 50px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+.btn-start:hover{cursor: pointer;}
+
+/* RIGHT SIDE */
+/* ********* */
+.right__side{ flex: 2; display: flex; padding: 50px;}
+.right__side div{ flex: 1;}
+.right__side div canvas{
+    width: 100%;
+}
+
+.right__side div canvas:nth-child(1){ margin-right: 25px; }
